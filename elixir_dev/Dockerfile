@@ -2,7 +2,7 @@ ARG BASE_IMG
 FROM $BASE_IMG
 
 RUN \
-  mise install elixir erlang \
+  mise install --yes elixir erlang \
   && mise use -g elixir erlang \
   && mise reshim
 
