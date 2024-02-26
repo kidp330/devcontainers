@@ -12,7 +12,10 @@ ENV \
   HISTPERSIST=${HISTPERSIST}
 
 RUN \
-  apt-get update && apt-get install trash-cli && /bin/rm -rf /var/lib/apt/lists/* \
-  && echo 'source <(mise activate bash)' >> ~/.bashrc \
+  apt-get update && apt-get install \
+    trash-cli \
+    bash-completion \
+    && /bin/rm -rf /var/lib/apt/lists/* \
   && echo 'source <(mise activate bash)' >> ~/.bashrc
+
 ENTRYPOINT [ "/bin/bash", "-o", "pipefail" ]
