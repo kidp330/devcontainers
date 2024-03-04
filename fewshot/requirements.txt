@@ -1,0 +1,12 @@
+# missing from pytorch container -
+# git
+# 
+# python==3.12
+torch
+h5py
+gpytorch
+neptune
+matplotlib
+pytorch-lightning
+tensorboardX
+typed-argument-parser

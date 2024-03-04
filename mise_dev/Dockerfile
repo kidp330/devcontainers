@@ -13,6 +13,6 @@ ENV \
 
 RUN \
   apt-get update && apt-get install trash-cli && /bin/rm -rf /var/lib/apt/lists/* \
-  && echo 'source <(mise activate bash)' >> ~/.bashrc \
   && echo 'source <(mise activate bash)' >> ~/.bashrc
+
 ENTRYPOINT [ "/bin/bash", "-o", "pipefail" ]
