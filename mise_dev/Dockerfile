@@ -1,11 +1,6 @@
 FROM jdxcode/mise:latest
 
-ARG HOST_CONFIG
 ARG HISTPERSIST
-
-COPY \
-  ./${HOST_CONFIG}/.bash* \ 
-  /root/
 
 ENV \
   PROMPT_HEAD='$ ' \
