@@ -16,6 +16,7 @@ RUN echo "deb https://apt.llvm.org/bookworm llvm-toolchain-bookworm-18 main" \
     git \
     trash-cli \
     bash-completion \
+    valgrind \
     llvm-toolchain-bookworm-18 clang-18 clang-tidy-18 clang-format-18 lld-18 libc++-18-dev libc++abi-18-dev && \
     for f in /usr/lib/llvm-*/bin/*; do ln -sf "$f" /usr/bin; done && \
     ln -sf clang /usr/bin/cc && \
