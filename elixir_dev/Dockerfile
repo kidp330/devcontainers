@@ -1,9 +1,11 @@
 ARG BASE_IMG
 FROM $BASE_IMG
 
+
 RUN \
-  KERL_BUILD_DOCS=yes \
-  mise install --yes elixir erlang \
+  apt-get update && apt-get -y install build-essential autoconf m4 libncurses5-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev default-jdk libwxgtk-webview3.2-1 libwxgtk-webview3.2-dev \
+    && /bin/rm -rf /var/lib/apt/lists/* \
+  && mise install --yes elixir erlang \
   && mise use -g elixir erlang \
   && mise reshim
 # TODO: set locale and fix erlang docs compilation
