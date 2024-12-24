@@ -1,3 +1,6 @@
 [submodule "haskell_dev"]
 	path = haskell_dev
 	url = https://github.com/kidq330/ghcup_dockerfile
+[submodule "mise_dev"]
+	path = mise_dev
+	url = git@github.com:kidq330/mise_dockerfile.git
