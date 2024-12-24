@@ -7,7 +7,7 @@ build_dir=$(_strip_path $root_dir $1)
 
 # file with required arguments MUST be in the same directory as $BASH_SOURCE
 env_file=/tmp/.env_${build_dir}_$(date +%s)
-envsubst <$root_dir/conf.env >$env_file
+envsubst < $root_dir/conf.env > $env_file
 source $env_file
 
 docker build \
