@@ -4,3 +4,6 @@
 [submodule "mise_dev"]
 	path = mise_dev
 	url = git@github.com:kidq330/mise_dockerfile.git
+[submodule "flux_dev"]
+	path = flux_dev
+	url = git@github.com:kidq330/flux_dockerfile.git
